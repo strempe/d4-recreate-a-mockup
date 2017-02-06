@@ -1,0 +1,63 @@
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    padding: 50px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    background: lightpink;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.column-8 {
+    flex: 8;
+}
+
+.column-3 {
+    flex: 3;
+}
+------------------------
+/* FLEX BOX */
+.row {
+border: 1px solid red;
+display: flex;
+margin-bottom: 40px;
+/* can be used to add space between columns*/
+display: block;
+/*block takes the full width*/
+display: inline;
+/*keeps elements sitting next to eahother - but cant add margin or padding*/
+display: inline block;
+/*gives you the best of both*/
+display: none;
+/*removes completly from document*/
+visibility: hidden;
+/*still takes up space but you cant see it*/
+opacity: 0.5;
+/*change opacity level*/
+/*display offeres a lot of variations on an element*/
+
+
