@@ -1,160 +1,168 @@
-
 * {
-    box-sizing: border-box;
-}   
+  box-sizing: border-box;
+}
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;   
+  max-width: 960px;
+  margin: 0 auto;  
 }
 
 .row {
-    display: flex;
-    margin-bottom: 40px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .column {
-    flex: 1;
-    
+  flex: 1;
+  margin: 20px;
 }
 
-.row-nav { 
+.nav {
+    color: lightslategray; 
+}
+
+.nav ul {
     display: flex;
-    font-weight: bold;
-    color: lightslategray;
+    padding: 0;   
 }
 
-.column-nav {
-    padding: 20px; 
+.nav li{
+    text-align: left;
+    padding: none;
+    margin: 10px;
+    list-style: none;
 }
 
-.row-header {
-    background: url(../img/background.jpg);
-    background-size: 100% 100%;
-    padding: 100px 0;
-    color: white;
-    text-align: center;   
-    font-size: 23px;
-    background-attachment: fixed;
-    background-position: 50px, 100px;
+/*.nav.ul.li:nth-child3 {
+    color: black;
+}*/
+.header {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  padding: 80px 0;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+  background-attachment: fixed;
+  background-position: center bottom;
 }
 
-.row-color{
-    margin-right:100px;
+.header h1 {
+    margin: 0;
+}
+
+.pricing {
+    margin-right: 100px;
     margin-left: 100px;
-    margin-top: 15px;
-}
-.column-color {
-    display: flex;
+    margin-top: 45px;
+    margin-bottom: 55px;
     text-align: center;
-    margin-top: 35px;
-    /*margin-left: 80px;
-    margin-right: 150px;*/
-    /*padding: 20px;  */
 }
-
-.header-one{
-    background: blue;
-    padding-right: 75px;
-    padding-left: 75px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-right: 20px;
-    color: whitesmoke
-}
-
-.header-two{
-    background: green;
-    padding-right: 55px;
-    padding-left: 55px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-right: 20px;
-    color: whitesmoke;
-}
-.header-three{
-    background: black;
-    margin-right: 30px;
-    color: whitesmoke;
-    padding-right: 54px;
-    padding-left: 54px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.a {
-    font-size: 15px;
+.option {
+    font-size: 12px;
     letter-spacing: 3px;
 }
-.b {
-    font-size: 85px;
+
+.price {
+    font-size: 60px;
 }
-.c{
-    font-size: 17px;
-    color: lightgrey;
-    font-weight: bold; 
+
+.time {
+    opacity: .5;
 }
-.row-about{
-    display: flex;
+.column .title {
+    padding: 40px;
     text-align: center;
-    line-height: 2;
-    margin-right:100px;
-    margin-left: 100px;
+    color: white;
 }
 
-.column-personal { 
-    display: flex;
-    background: lightgray;
-    margin-right: 20px;
-    padding-right: 35px;
-    padding-left: 75px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    
+.column .title.green {
+    background: #669966;
+    padding: 30px;
+    line-height: 45px;
 }
 
-.column-small {
-    display: flex;
-    background: lightgray;
-    margin-right: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
+/*.title:nth-child(2) {
+    font-size: 25px;
+}*/
+
+.column .title.blue { 
+    background: #333399;
+    padding: 30px;
+    line-height: 45px;
 }
 
-.column-enterprise{
-    display: flex;
-    background: lightgray;
-    margin-right: 30px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    text-align: center;    
-}
-
-.row-info-top {
-    display:flex;
-    padding-left: 100px;
-    padding-right: 100px;
-    line-height: 25px;
-}
-
-.row-info-bottom {
-    display:flex;
-    padding-left: 100px;
-    padding-right: 100px;
-    line-height: 25px;
-}
-
-.row-footer {
+.column .title.black {
     background: black;
-    color: white; 
+    padding: 30px;
+    line-height: 45px;
+}
+
+.column .features{
+    border: 1px solid silver;
+    background: #f7f7f7;
+}
+
+.column .features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+}
+
+.column .features li {
+    padding: 10px;
+    border-bottom: 1px solid silver;
+    font-size: 13px;
+    color: grey;
+}
+
+.button{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+button {
+    color: grey;
+    background: white;
+    border: 1px solid silver;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    font-weight: bold;
+    border-radius: 23px;
+    font-size: 13px;
+
+}
+
+.info {
+    color: dark grey;
+    font-size: 13px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
+    line-height: 25px;
+}
+.info .column{
+    margin: 10px;
+}
+
+.footer {
+    background: black;
+    color: grey;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     bottom: 0;
+    border-bottom-radius: 4px, solid, black;
 }
+
+a {
+    color: white;
+}
+   
+
+
